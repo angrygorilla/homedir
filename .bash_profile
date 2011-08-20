@@ -19,4 +19,4 @@ export HISTSIZE=32768;
 export HISTFILESIZE=$HISTSIZE;
 export HISTCONTROL=ignoredups;
 export EDITOR='vi';
-export MANPAGE='less -X';
+export MANPAGER='less -X';
