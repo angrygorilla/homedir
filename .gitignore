@@ -1,0 +1,10 @@
+# ignore everything
+*
+# except:
+!.gitignore
+!.bash_profile
+!.bash_logout
+!.vimrc
+!.vim
+!.vim/colors
+!.vim/colors/solarized.vim
