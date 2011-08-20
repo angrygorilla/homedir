@@ -1,6 +1,8 @@
 # set path
 [ -d "$HOME/Library/Haskell/bin" ] && export PATH=$HOME/Library/Haskell/bin:$PATH;
 [ -d "/usr/local/mysql/bin" ] && export PATH=/usr/local/mysql/bin:$PATH;
+# remove duplicates from the path 
+export PATH=`awk -F: '{for(i=1;i<=NF;i++){if(!($i in a)){a[$i];printf s$i;s=":"}}}'<<<$PATH`
 
 # set prompt 
 export PS1='(\!) \u@\h:\W $PROMPT_SMILEY\$ ';
@@ -16,4 +18,5 @@ alias less='less -X';
 export HISTSIZE=32768;
 export HISTFILESIZE=$HISTSIZE;
 export HISTCONTROL=ignoredups;
-export EDITOR=vi;
+export EDITOR='vi';
+export MANPAGE='less -X';
