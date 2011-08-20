@@ -10,6 +10,7 @@ export PROMPT_COMMAND='[ $? -eq 0 ] && PROMPT_SMILEY="" || PROMPT_SMILEY="$(tput
 alias ls='ls -G';
 alias simplehttpd='python -m SimpleHTTPServer 8888 >/dev/null 2>&1&';
 alias pro='vi ~/.bash_profile; source ~/.bash_profile';
+alias less='less -X';
 
 # shell variables
 export HISTSIZE=32768;
