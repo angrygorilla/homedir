@@ -4,3 +4,7 @@ colorscheme solarized
 
 set number
 set ruler
+
+set expandtab
+set tabstop=2
+set shiftwidth=2
