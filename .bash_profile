@@ -2,7 +2,7 @@
 [ -d "$HOME/Library/Haskell/bin" ] && export PATH=$HOME/Library/Haskell/bin:$PATH;
 [ -d "/usr/local/mysql/bin" ] && export PATH=/usr/local/mysql/bin:$PATH;
 # remove duplicates from the path 
-export PATH=`awk -F: '{for(i=1;i<=NF;i++){if(!($i in a)){a[$i];printf s$i;s=":"}}}'<<<$PATH`
+export PATH=`awk -F: '{for(i=1;i<=NF;i++){if(!($i in a)){a[$i];printf s$i;s=":"}}}'<<<$PATH`;
 
 # set prompt 
 export PS1='(\!) \u@\h:\W $PROMPT_SMILEY\$ ';
