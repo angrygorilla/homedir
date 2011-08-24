@@ -12,3 +12,4 @@ set shiftwidth=2
 set nowrap
 set autoindent
 set cursorline
+set autoread
