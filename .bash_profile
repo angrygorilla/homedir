@@ -1,8 +1,10 @@
 # set path:
 # check whether the Haskell binary directory exists and if so add it to the PATH
-[ -d "$HOME/Library/Haskell/bin" ] && export PATH=$HOME/Library/Haskell/bin:$PATH;
+[ -d "$HOME/Library/Haskell/bin" ] && export PATH="$HOME/Library/Haskell/bin:$PATH";
 # check whether the mysql binary directory exists and if so add it to the PATH
-[ -d "/usr/local/mysql/bin" ] && export PATH=/usr/local/mysql/bin:$PATH;
+[ -d "/usr/local/mysql/bin" ] && export PATH="/usr/local/mysql/bin:$PATH";
+# check whether the current user has a ~/bin and if so add it to the PATH
+[ -d "$HOME/bin" ] && export PATH="$HOME/bin:$PATH";
 # remove duplicates from the path 
 export PATH=`awk -F: '{for(i=1;i<=NF;i++){if(!($i in a)){a[$i];printf s$i;s=":"}}}'<<<$PATH`;
 
@@ -14,6 +16,10 @@ export PROMPT_COMMAND='[ $? -eq 0 ] && PROMPT_SMILEY="" || PROMPT_SMILEY="$(tput
 # aliases:
 # use colorized output when listing files
 alias ls='ls -G';
+# always ask for confirmation when removing files
+alias rm='rm -i';
+# always ask for confirmation when copying files
+alias cp='cp -i';
 # alias `simplehttpd` to start a simple webserver in the current director 
 alias simplehttpd='python -m SimpleHTTPServer 8888 >/dev/null 2>&1&';
 # alias to edit ~/.bash_profile and reload it after saving
