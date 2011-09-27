@@ -32,7 +32,7 @@ export HISTSIZE=32768;
 export HISTFILESIZE=$HISTSIZE;
 export HISTCONTROL=ignoredups;
 # list of commands that should not be added to history
-export HISTIGNORE="ls:ls *:exit:[bf]g"
+export HISTIGNORE="ls:ls -l:ls -al:exit:[bf]g"
 # make `vi` the default system editor
 export EDITOR='vi';
 # make `man` use use `less` for paging and not clear the screen upon exit
