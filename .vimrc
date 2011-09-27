@@ -20,6 +20,9 @@ set expandtab
 set softtabstop=2
 set shiftwidth=2
 
+" enable loading the indent file for specific file types
+filetype indent on
+
 " don't wrap long lines
 set nowrap
 

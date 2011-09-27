@@ -10,3 +10,6 @@
 !.vim
 !.vim/colors
 !.vim/colors/solarized.vim
+!.vim/indent
+!.vim/indent/html.vim
+!.vim/indent/javascript.vim
