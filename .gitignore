@@ -13,3 +13,5 @@
 !.vim/indent
 !.vim/indent/html.vim
 !.vim/indent/javascript.vim
+!.vim/syntax
+!.vim/syntax/html.vim

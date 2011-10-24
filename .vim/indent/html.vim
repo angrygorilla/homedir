@@ -103,7 +103,10 @@ call <SID>HtmlIndentPush('title')
 call <SID>HtmlIndentPush('tt')
 call <SID>HtmlIndentPush('u')
 call <SID>HtmlIndentPush('ul')
+call <SID>HtmlIndentPush('li')
 call <SID>HtmlIndentPush('var')
+call <SID>HtmlIndentPush('article')
+call <SID>HtmlIndentPush('section')
 
 
 " [-- <ELEMENT ? O O ...> --]
